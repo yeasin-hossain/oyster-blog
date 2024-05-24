@@ -1,12 +1,7 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-
-namespace oyster_blog.Entity
+﻿namespace oyster_blog.Service.DTO
 {
     public class Blog
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public int Id { get; set; }
 
         public string Title { get; set; }
@@ -18,5 +13,6 @@ namespace oyster_blog.Entity
         public DateTime UpdatedAt { get; set; }
 
         // TODO add created by and updated by
+
     }
 }
