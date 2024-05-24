@@ -1,34 +1,104 @@
-﻿using oyster_blog.Service.DTO;
+﻿using MongoDB.Bson;
+using oyster_blog.Repositories;
 using oyster_blog.Service.DTO.Request;
 using oyster_blog.Service.Interface;
+using System.Net;
 
 namespace oyster_blog.Service
 {
     public class BlogService: IBlogService
     {
-        public Task<List<Blog>> GetBlogsAsync()
+        private readonly BlogRepository blogRepository;
+
+        public BlogService(BlogRepository blogRepository)
+        {
+            this.blogRepository = blogRepository;
+        }
+
+        public async Task<List<DTO.Blog>> GetBlogsAsync()
+        {
+            var blogs = await blogRepository.GetBlogsAsync();
+
+            return blogs.Select(d => Map(d)).ToList();
+        }
+
+        public async Task<DTO.Blog> GetBlogAsync(string blogId)
+        {
+            var parsedId = ToObjectId(blogId);
+
+            var blog = await blogRepository.GetBlogAsync(parsedId);
+
+            return Map(blog);
+        }
+
+        public Task<DTO.Blog> DeleteBlogAsync(string blogId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<Blog> GetBlogAsync(string blogId)
+        public async Task<DTO.Blog> CreateBlogAsync(CreateBlogRequest blog)
         {
-            throw new NotImplementedException();
+            if (blog.Title != null || blog.Description != null)
+            {
+             //   return new CommonErrorException("Title and Description is required!");
+            }
+
+            var crateBlog = new Repositories.Entity.Blog
+            {
+                Title = blog.Title,
+                Description = blog.Description,
+                CreatedAt = DateTime.Now,
+            };
+
+            var createdBlog = await blogRepository.CreateBlogAsync(crateBlog);
+
+            return Map(createdBlog);
         }
 
-        public Task<Blog> DeleteBlogAsync(string blogId)
+        public async Task<DTO.Blog> UpdateBlogAsync(string blogId, UpdateBlogRequest blog)
         {
-            throw new NotImplementedException();
+            var oldBlog = await blogRepository.GetBlogAsync(ToObjectId(blogId));
+            if (oldBlog != null)
+            {
+              //  return new CommonErrorException(HttpStatusCode.NotFound,"Blog not found!");
+            }
+
+            var crateBlog = new Repositories.Entity.Blog
+            {
+                Title = blog.Title,
+                Description = blog.Description,
+                UpdatedAt = DateTime.Now,
+                CreatedAt = oldBlog.CreatedAt,
+            };
+
+            var createdBlog = await blogRepository.CreateBlogAsync(crateBlog);
+
+            return Map(createdBlog);
+
         }
 
-        public Task<Blog> CreateBlogAsync(CreateBlogRequest blog)
+        private DTO.Blog Map(Repositories.Entity.Blog blog)
         {
-            throw new NotImplementedException();
+            return new DTO.Blog
+            {
+                Id = blog.Id.ToString(),
+                Title = blog.Title,
+                Description = blog.Description,
+                CreatedAt = blog.CreatedAt,
+                UpdatedAt = blog.UpdatedAt,
+            };
         }
 
-        public Task<Blog> UpdateBlogAsync(string blogId, UpdateBlogRequest blog)
+        public static ObjectId ToObjectId(string id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return ObjectId.Parse(id);
+            }
+            catch
+            {
+                return ObjectId.Empty;
+            }
         }
     }
 }
