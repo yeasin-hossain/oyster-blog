@@ -9,7 +9,7 @@ namespace oyster_blog.Service.Interface
 
         Task<Blog> GetBlogAsync(string blogId);
 
-        Task<Blog> DeleteBlogAsync(string blogId);
+        Task DeleteBlogAsync(string blogId);
 
         Task<Blog> CreateBlogAsync(CreateBlogRequest blog);
 

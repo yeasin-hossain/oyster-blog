@@ -32,7 +32,7 @@ namespace oyster_blog.Repositories
 
         public async Task DeleteBlogAsync(ObjectId blogId)
         {
-             await blogsCollection.DeleteOneAsync(x => x.Id == blogId);
+            await blogsCollection.DeleteOneAsync(x => x.Id == blogId);
         }
 
         public async Task<Blog?> CreateBlogAsync(Blog? blog)

@@ -24,16 +24,15 @@ namespace oyster_blog.Service
 
         public async Task<DTO.Blog> GetBlogAsync(string blogId)
         {
-            var parsedId = ToObjectId(blogId);
 
-            var blog = await blogRepository.GetBlogAsync(parsedId);
+            var blog = await blogRepository.GetBlogAsync(ToObjectId(blogId));
 
             return Map(blog);
         }
 
-        public Task<DTO.Blog> DeleteBlogAsync(string blogId)
+        public async Task DeleteBlogAsync(string blogId)
         {
-            throw new NotImplementedException();
+            await blogRepository.DeleteBlogAsync(ToObjectId(blogId));
         }
 
         public async Task<DTO.Blog> CreateBlogAsync(CreateBlogRequest blog)
@@ -69,9 +68,10 @@ namespace oyster_blog.Service
                 Description = blog.Description,
                 UpdatedAt = DateTime.Now,
                 CreatedAt = oldBlog.CreatedAt,
+                Id = oldBlog.Id
             };
 
-            var createdBlog = await blogRepository.CreateBlogAsync(crateBlog);
+            var createdBlog = await blogRepository.UpdateBlogAsync(ToObjectId(blogId), crateBlog);
 
             return Map(createdBlog);
 

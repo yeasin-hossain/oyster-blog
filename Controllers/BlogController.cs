@@ -19,17 +19,17 @@ namespace oyster_blog.Controllers
         [HttpGet] 
         public async Task<List<Blog>> GetBlogs() => await blogService.GetBlogsAsync();
 
-        [HttpGet("{id}")]
+        [HttpGet("{blogId}")]
         public async Task<Blog> GetBlog(string blogId) => await blogService.GetBlogAsync(blogId);
 
         [HttpPost]
         public async Task<Blog> CreateBlog(CreateBlogRequest blog) => await blogService.CreateBlogAsync(blog);
 
-        [HttpPut("{id}")]
+        [HttpPut("{blogId}")]
         public async Task<Blog> UpdateBlog(string blogId, UpdateBlogRequest blog) => 
             await blogService.UpdateBlogAsync(blogId, blog);
 
-        [HttpDelete("{id}")]
-        public async Task<Blog> DeleteBlog(string blogId) => await blogService.DeleteBlogAsync(blogId);
+        [HttpDelete("{blogId}")]
+        public async Task DeleteBlog(string blogId) => await blogService.DeleteBlogAsync(blogId);
     }
 }

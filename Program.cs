@@ -1,9 +1,13 @@
 using oyster_blog.DB;
+using oyster_blog.Repositories;
+using oyster_blog.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.Configure<OysterBlogDbSettings>(builder.Configuration.GetSection("OysterBlogDatabase"));
+builder.Services.AddSingleton<BlogService>();
+builder.Services.AddSingleton<BlogRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
