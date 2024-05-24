@@ -1,0 +1,6 @@
+@oyster_blog_HostAddress = http://localhost:5285
+
+GET {{oyster_blog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
