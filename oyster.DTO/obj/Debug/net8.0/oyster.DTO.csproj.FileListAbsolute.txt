@@ -1,0 +1,12 @@
+G:\Personal project\backend\oyster.DTO\bin\Debug\net8.0\oyster.DTO.deps.json
+G:\Personal project\backend\oyster.DTO\bin\Debug\net8.0\oyster.DTO.dll
+G:\Personal project\backend\oyster.DTO\bin\Debug\net8.0\oyster.DTO.pdb
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.GeneratedMSBuildEditorConfig.editorconfig
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.AssemblyInfoInputs.cache
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.AssemblyInfo.cs
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.csproj.CoreCompileInputs.cache
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.sourcelink.json
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.dll
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\refint\oyster.DTO.dll
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\oyster.DTO.pdb
+G:\Personal project\backend\oyster.DTO\obj\Debug\net8.0\ref\oyster.DTO.dll

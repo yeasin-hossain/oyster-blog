@@ -1,0 +1,16 @@
+G:\Personal project\backend\oyster.Repositories\bin\Debug\net8.0\oyster.Repositories.deps.json
+G:\Personal project\backend\oyster.Repositories\bin\Debug\net8.0\oyster.Repositories.dll
+G:\Personal project\backend\oyster.Repositories\bin\Debug\net8.0\oyster.Repositories.pdb
+G:\Personal project\backend\oyster.Repositories\bin\Debug\net8.0\oyster.DB.dll
+G:\Personal project\backend\oyster.Repositories\bin\Debug\net8.0\oyster.DB.pdb
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.csproj.AssemblyReference.cache
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.AssemblyInfoInputs.cache
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.AssemblyInfo.cs
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.csproj.CoreCompileInputs.cache
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.sourcelink.json
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.R.89DBADD2.Up2Date
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.dll
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\refint\oyster.Repositories.dll
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\oyster.Repositories.pdb
+G:\Personal project\backend\oyster.Repositories\obj\Debug\net8.0\ref\oyster.Repositories.dll

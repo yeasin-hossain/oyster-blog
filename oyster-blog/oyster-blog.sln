@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oyster-blog", "oyster-blog.csproj", "{B36526EB-9718-4DB3-89E9-D152CBC0585F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oyster.service", "..\oyster.service\oyster.service.csproj", "{A860F3F9-3960-4138-A302-FE578FB99297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oyster.DTO", "..\oyster.DTO\oyster.DTO.csproj", "{FB5A6987-F7B8-4EBA-89DC-EB7EDED52B92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oyster.Repositories", "..\oyster.Repositories\oyster.Repositories.csproj", "{13F4D7FF-9A82-417F-B1FA-2410D8497408}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{A986A88F-2E86-406A-BA22-1E54B1D0E610}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oyster.DB", "..\oyster.DB\oyster.DB.csproj", "{D325B25F-FBEE-4F23-94E2-7FDC43190FA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B36526EB-9718-4DB3-89E9-D152CBC0585F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36526EB-9718-4DB3-89E9-D152CBC0585F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36526EB-9718-4DB3-89E9-D152CBC0585F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36526EB-9718-4DB3-89E9-D152CBC0585F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A860F3F9-3960-4138-A302-FE578FB99297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A860F3F9-3960-4138-A302-FE578FB99297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A860F3F9-3960-4138-A302-FE578FB99297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A860F3F9-3960-4138-A302-FE578FB99297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5A6987-F7B8-4EBA-89DC-EB7EDED52B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5A6987-F7B8-4EBA-89DC-EB7EDED52B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5A6987-F7B8-4EBA-89DC-EB7EDED52B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5A6987-F7B8-4EBA-89DC-EB7EDED52B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13F4D7FF-9A82-417F-B1FA-2410D8497408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F4D7FF-9A82-417F-B1FA-2410D8497408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F4D7FF-9A82-417F-B1FA-2410D8497408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F4D7FF-9A82-417F-B1FA-2410D8497408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D325B25F-FBEE-4F23-94E2-7FDC43190FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D325B25F-FBEE-4F23-94E2-7FDC43190FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D325B25F-FBEE-4F23-94E2-7FDC43190FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D325B25F-FBEE-4F23-94E2-7FDC43190FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13F4D7FF-9A82-417F-B1FA-2410D8497408} = {A986A88F-2E86-406A-BA22-1E54B1D0E610}
+		{D325B25F-FBEE-4F23-94E2-7FDC43190FA3} = {A986A88F-2E86-406A-BA22-1E54B1D0E610}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E9408E2-C773-4300-B5AD-C544CB217CEE}
+	EndGlobalSection
+EndGlobal

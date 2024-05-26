@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>oyster_blog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\oyster.DTO\oyster.DTO.csproj" />
+    <ProjectReference Include="..\oyster.Repositories\oyster.Repositories.csproj" />
+    <ProjectReference Include="..\oyster.service\oyster.service.csproj" />
+  </ItemGroup>
+
+</Project>

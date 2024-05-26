@@ -1,0 +1,13 @@
+G:\Personal project\backend\oyster.DB\bin\Debug\net8.0\oyster.DB.deps.json
+G:\Personal project\backend\oyster.DB\bin\Debug\net8.0\oyster.DB.dll
+G:\Personal project\backend\oyster.DB\bin\Debug\net8.0\oyster.DB.pdb
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.csproj.AssemblyReference.cache
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.GeneratedMSBuildEditorConfig.editorconfig
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.AssemblyInfoInputs.cache
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.AssemblyInfo.cs
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.csproj.CoreCompileInputs.cache
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.sourcelink.json
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.dll
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\refint\oyster.DB.dll
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\oyster.DB.pdb
+G:\Personal project\backend\oyster.DB\obj\Debug\net8.0\ref\oyster.DB.dll
